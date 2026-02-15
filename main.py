@@ -39,6 +39,7 @@ for stock in mystocks:
     hl = copy.copy(mystockdata[stock])
     hl.sort()
 
+    # Create the graphs
     plt.plot(mystock)
     plt.axis((0, 10, hl[0]-10, hl[-1]+10))
     plt.ylabel('Closing Price')
