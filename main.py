@@ -41,8 +41,11 @@ for stock in mystocks:
 
     # Create the graphs
     plt.plot(mystock)
+    plt.title(stock)
     plt.axis((0, 10, hl[0]-10, hl[-1]+10))
     plt.ylabel('Closing Price')
     plt.xlabel('Previous 10 Trading Days')
+    plt.savefig(f'charts/{stock}.png')
     plt.show()
+
 
